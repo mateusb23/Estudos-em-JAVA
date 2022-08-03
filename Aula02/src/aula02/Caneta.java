@@ -6,6 +6,7 @@ public class Caneta {				// Na minha classe Caneta eu estou com 5 atributos e 3 
 	float ponta;
 	int carga;
 	boolean tampada;
+	
 	void status() {
 		System.out.println("Modelo: " + this.modelo);
 		System.out.println("Uma caneta " + this.cor);
@@ -13,6 +14,7 @@ public class Caneta {				// Na minha classe Caneta eu estou com 5 atributos e 3 
 		System.out.println("Carga: " + this.carga);
 		System.out.println("Está tampada? " + this.tampada);
 	}
+	
 	void rabiscar() {
 		if (this.tampada == true) {
 			System.out.println("ERRO! Não posso rabiscar");
