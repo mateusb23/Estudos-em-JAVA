@@ -14,6 +14,7 @@ public class Aula02 {
 		Caneta c2 = new Caneta();						// objeto c2 instanciado(criado) a partir da classe Caneta
 		c2.modelo = "Esferográfica";
 		c2.cor = "Preta";
+		
 		c2.destampar();
 		c2.status();
 		c2.rabiscar();
