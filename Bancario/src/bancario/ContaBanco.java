@@ -1,13 +1,13 @@
 package bancario;
 
 public class ContaBanco {
-	//Atributos
+	
 	public int numconta;
 	protected String tipo;
 	private String dono;
 	private float saldo;
 	private boolean status;
-	//Métodos personalizados
+	
 	public void estadoAtual() {
 		System.out.println("Conta: " + this.getNumConta());
 		System.out.println("Tipo: " + this.getTipo());
@@ -16,11 +16,11 @@ public class ContaBanco {
 		System.out.println("Status: " + this.getStatus());
 	}
 	public void abrirConta(String t) {
-		this.setStatus(true);		//ou poderíamos ter acessado diretamente o atributo utilizando this.status = true;  -> mas é mais seguro e recomendado sempre utilizar pelo método
+		this.setStatus(true);	
 		this.setTipo(t);
-		if (t == "cc") {			//ou poderíamos ter utilizado "cc".equals(t)
+		if (t == "cc") {			
 			this.setSaldo(50);
-		} else if (t == "cp") {		//ou poderíamos ter utilizado "cp".equals(t)
+		} else if (t == "cp") {		
 			this.setSaldo(150);
 		}
 		System.out.println("Conta aberta com sucesso!");
@@ -69,10 +69,10 @@ public class ContaBanco {
 			System.out.println("Impossível pagar uma conta fechada!");
 		}
 	}
-	//Métodos especiais
-	public void ContaBanco() {		//Construtor
-		this.saldo = 0;				//this.setSaldo(0);
-		this.status = false;        //this.setStatus(false);
+	
+	public void ContaBanco() {		
+		this.saldo = 0;				
+		this.status = false;        
 	}
 	public void setNumConta(int numconta) {
 		this.numconta = numconta;
