@@ -71,8 +71,8 @@ public class ContaBanco {
 	}
 	
 	public void ContaBanco() {		
-		this.saldo = 0;				
-		this.status = false;        
+		this.setSaldo(0);				
+		this.setStatus(false);        
 	}
 	public void setNumConta(int numconta) {
 		this.numconta = numconta;
