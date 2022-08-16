@@ -12,12 +12,6 @@ public class BancoParaisoFiscal {
 
 		Scanner teclado = new Scanner(System.in);
 
-		/*System.out.println("Deseja criar uma conta?"
-				+ "\n Digite S para SIM!"
-				+ "\n Digite N para NÃO!");
-		desejaconta = teclado.next().toLowerCase().charAt(0);
-
-		if ("s".equals(desejaconta)) {*/
 			System.out.println("-------------INICIANDO CRIAÇÃO DA SUA CONTA-------------");
 
 			System.out.println("Digite o seu nome completo: ");
@@ -25,7 +19,7 @@ public class BancoParaisoFiscal {
 
 			System.out.print("\n Sua conta será CC(Corrente) ou CP(Poupança)? ");
 			tipoconta = teclado.next().toLowerCase();
-			while (("cp".equals(tipoconta)) && ("cc".equals(tipoconta))) {
+			while ((!"cp".equals(tipoconta)) && (!"cc".equals(tipoconta))) {
 				System.out.println("ERRADO, DIGITE [CC] ou [CP] PARA ESCOLHER O TIPO DA SUA CONTA: ");
 				tipoconta = teclado.next().toLowerCase();
 			} if ("cc".equals(tipoconta)) {
@@ -145,10 +139,8 @@ public class BancoParaisoFiscal {
 				System.out.println("OPERAÇÃO FINALIZADA !!!");
 			}
 			
-		//} else {
 			System.out.println("OPERAÇÃO FINALIZADA");
 			System.out.println("OBRIGADO");
-		//}
 	}
 
 }
