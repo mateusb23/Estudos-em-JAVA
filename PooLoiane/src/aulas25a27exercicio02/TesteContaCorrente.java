@@ -6,7 +6,10 @@ public class TesteContaCorrente {
 		
 		ContaCorrente cliente1 = new ContaCorrente();
 		cliente1.iniciarSistema();
-		cliente1.colocarNumeroConta("0001");
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o número da sua conta (0000): ");
+		String numconta = teclado.next();
+		cliente1.colocarNumeroConta(numconta);
 		cliente1.colocarNumeroAgencia("1234-5");
 		cliente1.depositar(4500);
 		cliente1.sacar(3500);
