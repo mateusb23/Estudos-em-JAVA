@@ -2,18 +2,19 @@ package ProjetoFinalBancoFuctura;
 
 public abstract class Contas {
 
-    private int numConta;
+    private String numConta;
     private String nome;
     private String cpf;
     private double saldoTotal;
+    private int senha;
 
     public Contas() { }
 
-    public int getNumConta() {
+    public String getNumConta() {
         return numConta;
     }
 
-    public void setNumConta(int numConta) {
+    public void setNumConta(String numConta) {
         this.numConta = numConta;
     }
 
@@ -41,6 +42,14 @@ public abstract class Contas {
         this.saldoTotal = saldo;
     }
 
+    public int getSenha() {
+        return senha;
+    }
+
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
+
     public void depositar(double valorDepositado) {
         ContaCorrente.setSaldoCorrente(ContaCorrente.getSaldoCorrente() + valorDepositado);
     }
@@ -51,4 +60,3 @@ public abstract class Contas {
     }
 
 }
-
