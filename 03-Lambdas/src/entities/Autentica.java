@@ -1,0 +1,10 @@
+package entities;
+
+@FunctionalInterface			/* UTILIZAMOS ESSA ANOTAÇÃO PARA INFORMAR QUE ESTA INTERFACE É FUNCIONAL. 
+								   ALÉM DE GARANTIR QUE NÃO SEJAM ADICIONADOS MAIS MÉTODOS ABSTRATOS NESSE INTERFACE, POIS SEMPRE VAI DISPARAR 
+								   UM ERRO DE COMPILAÇÃO, CASA TENHA MAIS DO UM MÉTODO ABSTRATO NESSA INTERAFCE AQUI. */
+public interface Autentica {
+
+	public abstract boolean autenticaSenha(String senha);
+	
+}
